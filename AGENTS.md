@@ -38,7 +38,7 @@ Update parent docs when parent-level structure, ownership, workflow, or child in
 
 ## Local Details
 
-- **Role**: LRP (Lightweight Resource Planning) — AI-native Enterprise Operating System core engine.
+- **Role**: LRP (Lesstupid Resource Planning) — AI-supported process design and improvement approach with an optional LRP Core reference implementation.
 - **Tier Classification**: **Tier 4 (Büyük / Kurumsal)** olarak tescil edilmiştir. LRP; katmanlı modüler monolith mimarisi, multi-tenant izole şema/veritabanı destekleri, audit loglama, OpenFGA tabanlı ReBAC, CQRS read model, asenkron webhook sub/pub yapısı ve hata tolere edici (circuit breaker) entegrasyonlar gibi Tier 4 kurumsal mühendislik standartlarının tamamını hedefler ve uygular.
 - **Language/Runtime**: Elixir 1.15+/BEAM (referans implementasyon). LRP bir protokoldür — Rust, PHP, Python, Go, Java ile de uygulanabilir.
 - **Version**: v0.1.0 (Entity Engine; Workflow, Ledger, AI katmanları planlanmış).
@@ -60,7 +60,7 @@ Update parent docs when parent-level structure, ownership, workflow, or child in
 
 Her ajan ve geliştirici bu sözleşmeleri zorunlu olarak uygular:
 
-1. **Knowledge Graph OS — Not ERP**: Her şey `OBJECT` veya `EVENT`'tir. Çekirdek şemada domain-spesifik tablo isimleri (customer, invoice, stock) yoktur.
+1. **Generic LRP Core**: Her şey `OBJECT` veya `EVENT`'tir. Çekirdek şemada domain-spesifik tablo isimleri (customer, invoice, stock) yoktur.
 
 2. **EAV Tablosu Yoktur**: Önceki taslaklarda değerlendirilen ayrı EAV tablosu **bilinçli olarak kaldırılmıştır**. PostgreSQL JSONB + GIN index, EAV'in yaptığı her şeyi tek noktadan yapar. `OBJECT.metadata` (JSONB) tüm dinamik alanların tek adresidir.
 
@@ -211,3 +211,12 @@ Sistem ayağa kalktığında yüklenmiş tüm eklenti modüllerini dinamik olara
 LRP.Plugin.Registry.register_all(tenant_id)
 ```
 Bu işlem otomatik olarak ilgili capability ve standby provider kayıtlarını oluşturur. Konfigürasyon doğrulaması geçemeyen bir provider'ın aktif olarak atanması (`bind/4`) durumunda veritabanı işlemi otomatik olarak geri alınır (rollback).
+
+## Product Identity and Delivery Paths
+
+- Canonical expansion: **Lesstupid Resource Planning**. Do not expand LRP as Lightweight Resource Planning.
+- Three independent paths: document a process as a blueprint; improve it in its existing system (SAP, Oracle, or another system); build it on LRP Core.
+- These paths may coexist. A blueprint is a valid standalone deliverable; migration to LRP Core is optional.
+- Distinguish product vision from implemented and verified capabilities. SAP ADT MCP supports discovery/development; RFC/BAPI or suitable business APIs require customer-specific access and validation.
+- See [docs/POSITIONING.md](docs/POSITIONING.md) for canonical positioning.
+- Documentation-only maintenance note (2026-09-13): the referenced B:/DEV/ENTERPRISE-ENGINEERING-PRINCIPLES.md is unavailable in this environment. This identity/positioning update follows the available root/docs contracts and preserves the Tier 4 classification; it changes no runtime behavior.

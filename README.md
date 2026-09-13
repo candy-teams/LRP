@@ -1,8 +1,26 @@
-# LRP — AI-native Enterprise Operating System
+# LRP — Lesstupid Resource Planning
 
 > For the full vision and where LRP is going, see **[VISION.md](VISION.md)**.
 >
 > This document describes **current implementation status** — what is actually built and what is not yet.
+
+---
+
+## LRP: Lesstupid Resource Planning
+
+LRP helps teams understand, improve, and implement business processes with AI support. Each process can follow one of three independent paths:
+
+| Path | Scope | Deliverable |
+|---|---|---|
+| **Blueprint** | Document steps, roles, business rules, data, controls, and exceptions. | A process design that can stand alone without running LRP Core. |
+| **Improve the existing system** | Implement the agreed improvement in SAP, Oracle, or the system already in use. | A tested process change in its existing environment. |
+| **Build on LRP Core** | Implement the process using LRP's shared objects, relationships, events, and workflow foundations. | An application or workflow on LRP Core, optionally integrated with existing systems. |
+
+These paths can coexist and are not mandatory migration stages. Moving to LRP Core is optional. Where a provider change is selected, staged migration and reconciliation apply to that specific scope.
+
+**Development status:** These are the product's intended delivery paths, not a claim that all ERP connectors or autonomous implementations are production-ready. The current repository contains a reference implementation under development.
+
+See [positioning and integration approach](docs/POSITIONING.md).
 
 ---
 
@@ -17,7 +35,7 @@
 
 ## What LRP Is (Today)
 
-LRP (Lightweight Resource Planning) is an Elixir/SQLite3 based **Object Graph Engine** —
+The current LRP Core reference implementation is an Elixir/SQLite3 based **Object Graph Engine** —
 a generic, event-driven core that eliminates domain-specific tables and replaces them with
 9 universal tables. It is designed to be the foundation on which AI-native enterprise
 applications are built.
@@ -143,7 +161,7 @@ lrp/
 
 ```bash
 # Repoyu klonla
-git clone https://github.com/ilkerkaanipcioglu/LRP.git
+git clone https://github.com/candy-teams/LRP.git
 cd LRP
 
 # Windows (PowerShell)

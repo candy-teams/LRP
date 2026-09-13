@@ -1,4 +1,13 @@
-# LRP — Platform Vizyonu
+# LRP — Lesstupid Resource Planning
+
+## Süreç İçin Üç Bağımsız Yol
+
+LRP, yapay zekâ destekli süreç tasarımı ve iyileştirme yaklaşımıdır. Bir süreç yalnızca **blueprint** olarak dokümante edilebilir, **mevcut sistemde** (SAP, Oracle veya başka bir sistem) düzenlenebilir ya da **LRP Core üzerinde** inşa edilebilir. Bu yollar birlikte kullanılabilir; zorunlu bir sıra veya LRP'ye taşıma şartı yoktur.
+
+Blueprint; adımları, rolleri, iş kurallarını, verileri, kontrolleri ve istisnaları tanımlar. Mevcut sistemde iyileştirme, o sistemin geliştirme ve onay mekanizmalarını kullanır. LRP Core ise yeni uygulamalar için ortak çekirdek sağlar. Sağlayıcı geçişi seçildiğinde aşamalı doğrulama ve mutabakat uygulanır.
+
+Aşağıdaki platform ve ekosistem bölümleri uzun vadeli vizyondur; uygulanmış özelliklerin garantisi değildir. [Konumlandırma ve entegrasyon yaklaşımı](docs/POSITIONING.md), [mevcut uygulama durumu](README.md).
+
 *Her üretici için. Her ölçekte. Her içerik türünde.*
 
 > LRP, bir KOBİ'nin muhasebe sisteminden bir müzisyenin AI stüdyosuna kadar

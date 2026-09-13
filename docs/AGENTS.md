@@ -40,9 +40,13 @@ Birincil mimari spesifikasyon: [`LRP-Mimari-v2-Protokol.md`](../LRP-Mimari-v2-Pr
 ADR olmayan tasarım dokümanları doğrudan `docs/` klasörüne açıklayıcı bir isimle konur. Yeni belge oluşturulduğunda bu AGENTS.md'ye de eklenir.
 
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) — LRP Yol Haritası ve Sprint Planları
-- [`docs/POSITIONING.md`](docs/POSITIONING.md) — Pazar Konumlandırması ve Rekabet Analizi (SAP, Odoo, Oracle, Microsoft Dynamics Çelişkileri)
+- [`docs/POSITIONING.md`](docs/POSITIONING.md) — Lesstupid Resource Planning adı, üç uygulama yolu ve entegrasyon yaklaşımı
 - [`docs/PLUGGABLE-APPLICATIONS.md`](docs/PLUGGABLE-APPLICATIONS.md) — Değişebilir Uygulamalar Prensibi (Pluggable Applications Principle)
 - [`docs/FRONTEND-STRATEGY.md`](docs/FRONTEND-STRATEGY.md) — Ön Yüz Stratejisi (Frontend Strategy - LiveView & Rust/WASM)
 - [`docs/MODERNIZER.md`](docs/MODERNIZER.md) — Eski Sistem Modernizasyon MVP Kullanım Kılavuzu (Legacy Modernizer Guide)
 
 - 🔴 **Software Engineering Principles**: Geliştirmeye başlamadan önce mutlaka [ENTERPRISE-ENGINEERING-PRINCIPLES.md](file:///B:/DEV/ENTERPRISE-ENGINEERING-PRINCIPLES.md) dosyasını okuyun, projenin tier seviyesini belirleyin ve kurallara uyun. Eğer bu kurallar dışında bir uygulama yapılacaksa bu durum `AGENTS.md` dosyasında belirtilmelidir; gerekirse `ENTERPRISE-ENGINEERING-PRINCIPLES.md` dosyası proje klasörüne kopyalanıp özelleştirilmiş bir versiyonu oluşturulabilir. Değişiklik küçükse sadece `AGENTS.md` dosyasında belirtilmesi yeterlidir.
+
+## Ürün Anlatımı
+
+Resmî açılım **Lesstupid Resource Planning** olarak kullanılır. Blueprint, mevcut sistemde iyileştirme ve LRP Core üzerinde inşa bağımsız seçeneklerdir; zorunlu geçiş sırası değildir. Ürün vizyonu ile doğrulanmış uygulama durumu ayrı belirtilir. Bu dokümantasyon değişikliği için kök AGENTS.md'deki 2026-09-13 bakım notu geçerlidir.
